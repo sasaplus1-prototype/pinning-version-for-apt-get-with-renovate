@@ -1,0 +1,22 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    ":label(renovate)",
+    ":timezone(Asia/Tokyo)"
+  ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": [
+        "^\\.github\\/workflows\\/.*\\.yml$"
+      ],
+      "matchStrings": [
+        "apt-get\\s+--yes\\s+install\\s+fonts-noto=(?<currentValue>\\S+)"
+      ],
+      "depNameTemplate": "fonts-noto",
+      "datasourceTemplate": "ubuntu",
+      "versioningTemplate": "loose"
+    }
+  ]
+}
