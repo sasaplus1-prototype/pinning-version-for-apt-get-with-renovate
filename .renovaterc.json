@@ -14,9 +14,10 @@
       "matchStrings": [
         "apt-get\\s+(?:--yes\\s+)?install\\s+(?<depName>\\S+)=(?<currentValue>\\S+)"
       ],
-      "depNameTemplate": "fonts-noto",
+      "depNameTemplate": "{{depName}}",
       "datasourceTemplate": "deb",
       "versioningTemplate": "ubuntu",
+      "registryUrlTemplate": "http://azure.archive.ubuntu.com/ubuntu",
       "autoReplaceStringTemplate": "apt-get --yes install {{depName}}={{currentValue}}"
     }
   ]
