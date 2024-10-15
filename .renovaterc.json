@@ -12,13 +12,13 @@
         "^\\.github\\/workflows\\/.*\\.yml$"
       ],
       "matchStrings": [
-        "apt-get\\s+--yes\\s+install\\s+(?:(?<depName>\\S+)=?(?<currentValue>\\S*)\\s*)+"
+        "apt-get\\s+--yes\\s+install\\s+(?<depName>\\S+)=(?<currentValue>\\S+)"
       ],
       "depNameTemplate": "{{depName}}",
       "datasourceTemplate": "deb",
       "versioningTemplate": "ubuntu",
       "registryUrlTemplate": "http://azure.archive.ubuntu.com/ubuntu",
-      "autoReplaceStringTemplate": "apt-get --yes install {{#each updates}}{{{depName}}}={{{currentValue}}}{{/each}}"
+      "autoReplaceStringTemplate": "apt-get --yes install {{{depName}}}={{{currentValue}}}"
     }
   ]
 }
