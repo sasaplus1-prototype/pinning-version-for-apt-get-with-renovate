@@ -15,8 +15,8 @@
         "apt-get\\s+(?:--yes\\s+)?install\\s+fonts-noto=(?<currentValue>\\S+)"
       ],
       "depNameTemplate": "fonts-noto",
-      "datasourceTemplate": "ubuntu",
-      "versioningTemplate": "loose",
+      "datasourceTemplate": "deb",
+      "versioningTemplate": "deb",
       "autoReplaceStringTemplate": "apt-get --yes install fonts-mono={{currentValue}}"
     }
   ]
