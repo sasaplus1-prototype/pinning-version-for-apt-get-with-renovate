@@ -9,6 +9,7 @@ jobs:
     timeout-minutes: 5
     steps: 
       - run: sudo apt-get --yes update
+      - run: sudo apt-cache fonts-noto
       - run: sudo apt-get --yes install fonts-noto=20200323-1
       - run: |
           sudo apt-get --yes update
