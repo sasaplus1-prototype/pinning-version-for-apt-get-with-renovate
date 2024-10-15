@@ -12,11 +12,12 @@
         "^\\.github\\/workflows\\/.*\\.yml$"
       ],
       "matchStrings": [
-        "apt-get\\s+--yes\\s+install\\s+fonts-noto=(?<currentValue>\\S+)"
+        "apt-get\\s+(?:--yes\\s+)?install\\s+fonts-noto=(?<currentValue>\\S+)"
       ],
       "depNameTemplate": "fonts-noto",
       "datasourceTemplate": "ubuntu",
-      "versioningTemplate": "loose"
+      "versioningTemplate": "loose",
+      "autoReplaceStringTemplate": "apt-get --yes install fonts-mono={{currentValue}}"
     }
   ]
 }
