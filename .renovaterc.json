@@ -14,7 +14,12 @@
       "matchStrings": [
         "apt-get\\s+--yes\\s+install\\s+(?<depName>\\S+)=(?<currentValue>\\S+)"
       ],
-      "registryUrlTemplate": "http://archive.ubuntu.com/ubuntu?release=focal,focal-updates,focal-security,focal-backports&components=main,restricted,universe,multiverse&binaryArch=amd64",
+      "registryUrls": [
+        "http://archive.ubuntu.com/ubuntu?release=focal&components=main,restricted,universe,multiverse&binaryArch=amd64",
+        "http://archive.ubuntu.com/ubuntu?release=focal-backports&components=main,restricted,universe,multiverse&binaryArch=amd64",
+        "http://archive.ubuntu.com/ubuntu?release=focal-security&components=main,restricted,universe,multiverse&binaryArch=amd64",
+        "http://archive.ubuntu.com/ubuntu?release=focal-updates&components=main,restricted,universe,multiverse&binaryArch=amd64"
+      ],
       "datasourceTemplate": "deb"
     }
   ]
