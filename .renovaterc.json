@@ -14,7 +14,7 @@
       "matchStrings": [
         "apt-get\\s+--yes\\s+install\\s+(?<depName>\\S+)=(?<currentValue>\\S+)"
       ],
-      "registryUrlTemplate": "http://archive.ubuntu.com/ubuntu?release=focal&components=main,restricted,universe,multiverse&binaryArch=amd64",
+      "registryUrlTemplate": "http://archive.ubuntu.com/ubuntu?release=focal-updates&components=main,restricted,universe,multiverse&binaryArch=amd64",
       "datasourceTemplate": "deb"
     }
   ]
