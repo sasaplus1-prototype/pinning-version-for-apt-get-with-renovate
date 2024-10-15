@@ -16,7 +16,7 @@
       ],
       "depNameTemplate": "fonts-noto",
       "datasourceTemplate": "deb",
-      "versioningTemplate": "deb",
+      "versioningTemplate": "ubuntu",
       "autoReplaceStringTemplate": "apt-get --yes install {{depName}}={{currentValue}}"
     }
   ]
