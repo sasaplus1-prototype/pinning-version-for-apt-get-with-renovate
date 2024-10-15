@@ -11,8 +11,8 @@ jobs:
       - run: sudo apt-cache madison fonts-noto
       - run: sudo apt-get --yes update
       - run: sudo apt-cache madison fonts-noto
-      - run: sudo apt-get --yes install fonts-noto=20200323-1
+      - run: sudo apt-get --yes install fonts-noto=20200323-1build1~ubuntu20.04.1
       - run: |
           sudo apt-get --yes update
-          sudo apt-get --yes install fonts-noto=20200323-1
+          sudo apt-get --yes install fonts-noto=20200323-1build1~ubuntu20.04.1
         continue-on-error: true
